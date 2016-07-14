@@ -1,0 +1,77 @@
+[
+	{
+		"full_name": "Sydney, ",
+		"city": "Sydney",
+		"city_code": "SYD",
+		"state": "",
+		"country": "AU",
+		"country_iso3166": "AU",
+		"latitude": "-33.95",
+		"longitude": "151.17",
+		"elevation": "20",
+		"local_tz_short": "AEST",
+		"local_tz_long": "Australia/Sydney",
+		"local_tz_offset": "+1000"
+		
+	},
+	{
+		"full_name": "Rivervale, Rivervale, WESTERN AUSTRALIA",
+		"city": "Perth",
+		"city_code": "PER",
+		"state": "WESTERN AUSTRALIA",
+		"country": "AUSTRALIA",
+		"country_iso3166": "AU",
+		"latitude": "-31.95",
+		"longitude": "115.92",
+		"elevation": "49",
+		"local_tz_short": "AWST",
+		"local_tz_long": "Australia/Perth",
+		"local_tz_offset": "+0800"
+		
+	},
+	{
+		"full_name": "Location 9: Bourke/Spring Street - GWTS, Melbourne, VICTORIA",
+		"city": "Melbourne",
+		"city_code": "MEL",		
+		"state": "VICTORIA",
+		"country": "AU",
+		"country_iso3166": "AU",
+		"latitude": "-37.81",
+		"longitude": "144.97",
+		"elevation": "141",
+		"local_tz_short": "AEST",
+		"local_tz_long": "Australia/Melbourne",
+		"local_tz_offset": "+1000"
+		
+	},
+	{
+		"full_name": "Wavell Heights, Wavell Heights, QUEENSLAND",
+		"city": "Brisbane",
+		"city_code": "BNE",		
+		"state": "QUEENSLAND",
+		"country": "AU",
+		"country_iso3166": "AU",
+		"latitude": "-27.38",
+		"longitude": "153.05",
+		"elevation": "39",
+		"local_tz_short": "AEST",
+		"local_tz_long": "Australia/Brisbane",
+		"local_tz_offset": "+1000"
+		
+	},
+	{
+		"full_name": "West Beach, West Beach, SOUTH AUSTRALIA",
+		"city": "Adelaide",
+		"city_code": "ADL",		
+		"state": "SOUTH AUSTRALIA",
+		"country": "AU",
+		"country_iso3166": "AU",
+		"latitude": "-34.94",
+		"longitude": "138.51",
+		"elevation": "26",
+		"local_tz_short": "ACST",
+		"local_tz_long": "Australia/Adelaide",
+		"local_tz_offset": "+0930"
+		
+	}
+	]
