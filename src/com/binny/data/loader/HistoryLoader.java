@@ -55,7 +55,7 @@ public class HistoryLoader {
 		cityFileDataMap = new HashMap<String, HashMap>();
 		String[] cities = { "Sydney", "Perth", "Adelaide", "Brisbane",
 				"Melbourne" };
-		File file = new File("data/history");
+		File file = new File("resources/history");
 		
 		String[] files = file.list(new FilenameFilter() {
 			@Override
@@ -69,6 +69,8 @@ public class HistoryLoader {
 
 			String city = (String) cities[i];
 			ArrayList<String> cityFiles = new ArrayList();
+			//System.out.println("cityFiles: " + cityFiles.toString());
+			
 			for (int j = 0; j < files.length; j++) {
 				String fileName = (String) files[j];
 				if (fileName.contains(city.toLowerCase())) {
@@ -113,7 +115,8 @@ public class HistoryLoader {
 	 */
 	public HashMap parseFile(String city, String fileName) {
 
-		String histFile = "data/history/" + fileName;
+		String histFile = "resources/history/" + fileName;
+		
 		BufferedReader br = null;
 		String line = "";
 		String splitter = ",";
@@ -165,11 +168,14 @@ public class HistoryLoader {
 		WeatherHistory wh = new WeatherHistory();
 		wh.setCity(city);
 		wh.setReadingDateStr(line[0]);
+		
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		Date dt = null;
 		try {
 			dt = df.parse(line[0]);
 		} catch (ParseException e) {
+			wh.setReadingDateStr(line[0]);
+			System.out.println("++++++++++++ "+ city + wh.getReadingDateStr());
 			e.printStackTrace();
 		}
 		wh.setReadingDate(dt);

@@ -36,7 +36,7 @@ public class StationLoader {
 		try {
 
 			JSONArray cityList = (JSONArray) parser.parse(new FileReader(
-					"data/cities/cities.json"));
+					"resources/cities.json"));
 			Iterator iterator = (Iterator) cityList.iterator();
 			while (iterator.hasNext()) {
 				JSONObject jsonObject = (JSONObject) iterator.next();
@@ -66,6 +66,8 @@ public class StationLoader {
 				station.setTimeZoneOffset((String) jsonObject
 						.get("local_tz_offset"));
 				stationList.add(station);
+				
+//				System.out.println("Station: " + station.getCity());
 			}
 
 		} catch (Exception e) {
